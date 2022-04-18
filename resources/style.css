@@ -1,0 +1,309 @@
+body {
+    margin: 0 auto;
+    font-size: 14;
+    color: rgb(78, 78, 78);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    height: 64px;
+    width: 100%;
+    z-index: 1;
+    padding-left: 24px;
+    background-color: white;
+}
+
+header h2{
+    font-weight: 400;
+    color: rgb(126, 126, 126)
+}
+
+header h2 strong {
+    color: rgb(78, 78, 78);
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    padding-right: 2rem;
+}
+
+nav li {
+    display: inline-flex;
+    padding-right: 1rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(78, 78, 78);
+}
+
+main {
+    position: absolute;
+    top: 64px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 675px) {
+    
+}
+
+/* Banner Styling */
+
+.section {
+    display: flex;
+    width: 100%;
+}
+
+@media only screen and (max-width: px) {
+    .section {
+        display: block;
+    }
+}
+
+#Banner {
+    background-color: lightgrey;
+    align-items: center;
+}
+
+#banner-img {
+    /* display: flex; */
+    width: 60%;
+    padding: 32px 24px;
+}
+
+#Banner img {
+    display: flex;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+
+#start {
+    width: 40%;
+    padding-right: 1rem;
+}
+
+#start h3 {
+    color: white;
+    font-weight: lighter;
+    background-color: rgb(78, 78, 78);
+    padding: 8px;
+    text-align: center;
+    margin: 24px 24px 24px 0;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+#start h3:hover {
+    background-color:rgb(34, 34, 34);
+}
+
+
+
+/* INFO Styling */
+#Information {
+    width: 100%;
+}
+
+#practice {
+    width: 60%;
+    padding: 32px 24px;
+}
+
+#practice img{
+    display: flex;
+    width: 100%;
+}
+
+#practice h1 {
+    font-size: 2rem;
+}
+#practice h4 {
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+#info-links {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#info-links a {
+    text-decoration: none;
+    color: rgb(78, 78, 78);
+    font-size: .75rem;
+}
+
+.link-element {
+    display: inline-flex;
+    border: 1px solid rgba(187, 187, 187, 0.575);
+    padding: 1rem;
+    transition: 0.5s;
+    align-items: center;
+}
+
+.image-container {
+    width: 40%;
+    overflow: hidden;
+}
+
+.image-container img{
+    width: 225%;
+    min-height: 100px;
+    position: relative;
+    left: -2.5rem; 
+    transition: 1s;
+}
+
+.link-element:hover .image-container img {
+    left: -3rem;
+}
+
+.link-element:hover {
+    background-color: rgba(211, 211, 211, 0.363);
+}
+
+.link-text h2,  .link-text p {
+    margin: 8px;
+}
+
+.link-text {
+    width: 65%;
+    padding-left: 1rem;
+}
+
+span {
+    color: rgb(85, 168, 219);
+}
+
+
+/* Courses Styling */
+#Courses {
+    display: block;
+    background-color: lightgrey;
+}
+
+.title h1{
+    text-align: center;
+    padding-top: 32px;
+    font-size: 2rem;
+}
+
+#options {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 32px;
+    justify-content: center;
+}
+
+.link-course {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    height: 250px;
+    background-color: white;
+    margin: 1rem;
+    padding-bottom: 24px;
+    transition: 0.5s;
+}
+
+.link-course h2, .link-course p {
+    margin: 4px 16px;
+}
+
+.link-course h2 {
+    margin-top: 12px;
+}
+
+#options a {
+    text-decoration: none;
+    color: rgb(78, 78, 78);
+    font-size: .75rem;
+}
+
+.link-course:hover {
+    background-color: rgba(241, 241, 241, 0.863);
+}
+
+
+
+/* Thesis styling */
+#Thesis {
+    display: block;
+}
+
+.flex-container {
+    display: flex;
+}
+
+#urban {
+    width: 60%;
+    padding: 32px 24px;
+}
+
+#urban video{
+    display: flex;
+    width: 100%;
+}
+
+#urban h1 {
+    font-size: 2rem;
+}
+
+#urban h4 {
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+#thesis-links {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#thesis-links a {
+    text-decoration: none;
+    color: rgb(78, 78, 78);
+    font-size: .75rem;
+}
+
+.thesis-image-container {
+    width: 40%;
+    overflow: hidden;
+}
+
+.thesis-image-container img{
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    border-top: 1px solid rgba(211, 211, 211, 0.363);
+    font-size: .75rem;
+}
+
+footer p {
+    width: 60%;
+    padding: 12px;
+    margin: 0;
+}
+
+footer nav a{
+    padding: 12px;
+    text-decoration: none;
+    color: rgb(78, 78, 78);
+}
